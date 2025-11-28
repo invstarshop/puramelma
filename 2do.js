@@ -99,7 +99,7 @@ const ticketInput = document.getElementById("ticket-amount");
 const quickBtns = document.querySelectorAll(".quick-btn");
 const ticketTotal = document.getElementById("ticket-total");
 
-const ticketPrice = 1.50;
+const ticketPrice = 1;
 function updateTotal() {
   const amount = parseInt(ticketInput.value) || 1;
   ticketTotal.textContent = (amount * ticketPrice).toFixed(2);
@@ -266,6 +266,7 @@ document.addEventListener("keydown", (e) => {
     lightbox.style.display = "none";
   }
 });
+
 
 
 
